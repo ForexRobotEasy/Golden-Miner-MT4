@@ -1,0 +1,50 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                            Golden Miner MT4.mq5   |
+//|                                    Copyright 2022, Forex Robot Easy Team               |
+//|                                          https://www.forexroboteasy.com |
+//+------------------------------------------------------------------+
+
+//--- Expert initialization function
+int OnInit()
+{
+    //--- Initialize necessary variables and settings
+    return(INIT_SUCCEEDED);
+}
+
+//--- Expert deinitialization function
+void OnDeinit(const int reason)
+{
+    //--- Perform necessary cleanup tasks
+}
+
+//--- Expert tick function
+void OnTick()
+{
+    //--- Implement scalping strategy
+    if(ScalpingStrategy())
+    {
+        //--- Initiate buy and sell positions
+        BuyPosition();
+        SellPosition();
+    }
+}
+
+//--- Scalping strategy implementation
+bool ScalpingStrategy()
+{
+    //--- Add scalping strategy logic here
+    return true; // Replace with actual strategy condition
+}
+
+//--- Buy position initiation
+void BuyPosition()
+{
+    //--- Add code for initiating buy position here
+}
+
+//--- Sell position initiation
+void SellPosition()
+{
+    //--- Add code for initiating sell position here
+}
